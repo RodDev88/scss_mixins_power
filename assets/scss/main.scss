@@ -1,0 +1,28 @@
+@mixin size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+/*RECORDAR separa los selectores
+#1 #2 #3 es incorrecto
+#1, #2, #3 sería lo correcto
+PERO RECUERDA NO INICIAR EL NOMBRE D EUN ID CON Nº*/
+
+#div1, #div2, #div3 {
+    background-color: green;
+    margin: 10px;
+    
+}
+
+
+#div1 {
+    @include size(100px, 350px)
+}
+
+#div2 {
+    @include size(500px, 50px)
+}
+
+#div3 {
+    @include size(1000px, 50px)
+}
